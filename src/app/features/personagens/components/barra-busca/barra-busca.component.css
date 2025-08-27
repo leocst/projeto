@@ -1,0 +1,15 @@
+.busca-container {
+  margin-bottom: 2rem;
+}
+
+.busca-input {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.barra-busca-container {
+  width: 100%;
+}

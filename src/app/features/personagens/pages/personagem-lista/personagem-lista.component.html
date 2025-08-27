@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="header">
+    <h1>Lista de Personagens</h1>
+    <a mat-raised-button color="primary" routerLink="/personagens/novo">
+      Novo Personagem
+    </a>
+  </div>
+
+  <app-barra-busca (termoBusca)="onBusca($event)"></app-barra-busca>
+  <div class="content">
+    @if (loading()) {
+      <div class="spinner-container">
+        <mat-progress-spinner mode="indeterminate"></mat-progress-spinner>
+      </div>
+    } @else if (error()) {
+      <div class="error-message">
+        <p>{{ error() }}</p>
+        <button mat-stroked-button color="warn" (click)="recarregar()">
+          Tentar Novamente
+        </button>
+      </div>
+    } @else {
+      <div class="personagens-grid">
+        @for (personagem of personagens(); track personagem.id) {
+          <a [routerLink]="['/personagens', personagem.id]" class="card-link">
+            <mat-card class="personagem-card">
+              <mat-card-header>
+                <mat-card-title>{{ personagem.name }}</mat-card-title>
+                <mat-card-subtitle>
+                  {{ personagem.species }} - 
+                  <span [class]="personagem.status.toLowerCase()">{{ personagem.status }}</span>
+                </mat-card-subtitle>
+              </mat-card-header>
+              <img mat-card-image [src]="personagem.image" [alt]="personagem.name">
+            </mat-card>
+          </a>
+        } @empty {
+          <p>Nenhum personagem encontrado.</p>
+        }
+      </div>
+    }
+  </div>
+</div>

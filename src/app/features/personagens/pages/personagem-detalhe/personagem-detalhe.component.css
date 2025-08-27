@@ -1,0 +1,63 @@
+.container {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.btn-voltar {
+  margin-bottom: 1.5rem;
+}
+
+.content {
+  margin-top: 1rem;
+}
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+}
+
+.detalhe-card {
+  width: 100%;
+}
+
+.detalhe-header {
+  padding-bottom: 1rem;
+}
+
+.detalhe-imagem {
+  max-height: 400px;
+  object-fit: contain; 
+  background-color: #f5f5f5; 
+}
+mat-card-content h3 {
+  margin-top: 1.5rem;
+  font-weight: 500;
+  border-bottom: 1px solid rgba(0,0,0,0.12);
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+mat-list-item span {
+  margin-left: 1rem;
+}
+
+/* Classes para o status do personagem */
+.alive {
+  color: #55cc44; /* Verde */
+}
+
+.dead {
+  color: #d63d2e; /* Vermelho */
+}
+
+.unknown {
+  color: #9e9e9e; /* Cinza */
+}
+
+.error-message {
+  text-align: center;
+  padding: 2rem;
+}

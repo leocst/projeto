@@ -1,0 +1,11 @@
+<mat-form-field class="barra-busca-container" appearance="outline">
+  <mat-label>Buscar por nome...</mat-label>
+  <input 
+    matInput 
+    type="text" 
+    #inputBusca 
+    (keyup)="onBusca(inputBusca.value)"
+    placeholder="Ex: Rick, Morty, Summer..."
+  >
+  <mat-icon matSuffix>search</mat-icon>
+</mat-form-field>
