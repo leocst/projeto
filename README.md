@@ -1,27 +1,52 @@
-# Projeto
+# Projeto CRUD de Personagens com Angular 17
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.17.
+Aplicação web completa que implementa as quatro operações do CRUD 
 
-## Development server
+## Features
+*   **Listagem e Busca:** Visualização de todos os personagens com busca dinâmica por nome.
+*   **Visualização de Detalhes:** Página dedicada com todas as informações de um personagem.
+*   **Criação e Edição:** Formulário único e reutilizável para criar novos personagens ou editar existentes (as alterações são salvas localmente no estado da aplicação).
+*   **Exclusão:** Funcionalidade para remover um personagem da lista com diálogo de confirmação.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Tecnologias e Padrões Utilizados
+### Core
+*   **Angular 17:** 
+*   **TypeScript:** 
+*   **Standalone Components:** 
 
-## Code scaffolding
+### Gerenciamento de Estado
+*   **Angular Signals:**
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### UI / UX
+*   **Angular Material:**
+*   **CSS Grid e Flexbox:** 
 
-## Build
+### Testes
+*   **Jest:** 
+*   **Alta Cobertura de Testes (>85%):** 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Como Executar o Projeto
 
-## Running unit tests
+1.  **Clone o repositório:**
+    ```bash
+    git clone https://github.com/leocst/projeto.git
+    ```
+2.  **Navegue até a pasta do projeto:**
+    ```bash
+    cd SEU-REPOSITORIO
+    ```
+3.  **Instale as dependências:**
+    ```bash
+    npm install
+    ```
+4.  **Execute a aplicação em modo de desenvolvimento:**
+    ```bash
+    ng serve
+    ```
+5.  Abra seu navegador e acesse `http://localhost:4200/`.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Executando os Testes
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Para rodar os testes unitários, execute o comando:
+```bash
+npm test
